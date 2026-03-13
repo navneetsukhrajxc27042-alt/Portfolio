@@ -23,28 +23,28 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-24 bg-zinc-950">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="grid md:grid-cols-2 gap-16 items-center">
+    <section id="about" className="bg-zinc-950 py-16 sm:py-20 lg:py-24">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6">
+        <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
           {/* Image Side */}
-          <div className="relative">
+          <div className="relative order-2 lg:order-1">
             <div className="relative overflow-hidden rounded-lg">
               <img
                 src={aboutData.image}
                 alt="Workspace"
-                className="w-full h-[500px] object-cover"
+                className="h-[320px] w-full object-cover sm:h-[420px] lg:h-[500px]"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
             </div>
             {/* Accent Element */}
-            <div className="absolute -bottom-6 -right-6 w-48 h-48 bg-gradient-to-br from-red-600 to-red-500 opacity-20 blur-3xl rounded-full"></div>
+            <div className="absolute -bottom-4 -right-4 h-32 w-32 rounded-full bg-gradient-to-br from-red-600 to-red-500 opacity-20 blur-3xl sm:-bottom-6 sm:-right-6 sm:h-48 sm:w-48"></div>
           </div>
 
           {/* Content Side */}
-          <div className="space-y-8">
+          <div className="order-1 space-y-6 lg:order-2 lg:space-y-8">
             <div>
               <h2
-                className="text-5xl md:text-6xl font-bold mb-4 tracking-tight"
+                className="mb-4 text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl"
                 style={{ fontFamily: '"Bebas Neue", sans-serif' }}
               >
                 <span className="text-white">About </span>
@@ -53,7 +53,7 @@ const About = () => {
                 </span>
               </h2>
               <div className="w-20 h-1 bg-gradient-to-r from-red-600 to-red-500 mb-6"></div>
-              <p className="text-gray-300 text-lg leading-relaxed mb-6">
+              <p className="mb-6 text-base leading-relaxed text-gray-300 sm:text-lg">
                 {aboutData.bio}
               </p>
               <p className="text-gray-400 leading-relaxed">
@@ -64,10 +64,10 @@ const About = () => {
             </div>
 
             {/* Stats Grid */}
-            <div className="grid grid-cols-3 gap-4 pt-8">
+            <div className="grid grid-cols-1 gap-4 pt-2 sm:grid-cols-3 sm:pt-8">
               {stats.map((stat, index) => (
                 <Card key={index} className="bg-zinc-900 border-zinc-800 text-center">
-                  <CardContent className="p-6">
+                  <CardContent className="p-5 sm:p-6">
                     <div className="flex justify-center mb-3">{stat.icon}</div>
                     <div
                       className="text-3xl font-bold text-white mb-1"

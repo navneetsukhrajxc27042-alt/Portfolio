@@ -16,12 +16,12 @@ const iconMap = {
 
 const Software = () => {
   return (
-    <section id="software" className="py-24 bg-zinc-950">
-      <div className="max-w-7xl mx-auto px-6">
+    <section id="software" className="bg-zinc-950 py-16 sm:py-20 lg:py-24">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div className="mb-12 text-center sm:mb-16">
           <h2
-            className="text-5xl md:text-6xl font-bold mb-4 tracking-tight"
+            className="mb-4 text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl"
             style={{ fontFamily: '"Bebas Neue", sans-serif' }}
           >
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-red-500">
@@ -30,24 +30,24 @@ const Software = () => {
             <span className="text-white"> & Software</span>
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-red-600 to-red-500 mx-auto mb-6"></div>
-          <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+          <p className="mx-auto max-w-2xl text-base text-gray-400 sm:text-lg">
             Industry-standard software I use to bring creative visions to life
           </p>
         </div>
 
         {/* Software Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 gap-4 sm:gap-5 md:grid-cols-3 xl:grid-cols-4 xl:gap-6">
           {softwareTools.map((tool, index) => {
             const Icon = iconMap[tool.icon];
             return (
               <Card
                 key={index}
-                className="bg-zinc-900 border-zinc-800 hover:border-red-500 transition-all duration-300 group cursor-pointer"
+                className="group cursor-pointer border-zinc-800 bg-zinc-900 transition-all duration-300 hover:border-red-500"
               >
-                <CardContent className="p-8 text-center">
+                <CardContent className="p-5 text-center sm:p-6 md:p-8">
                   <div className="flex justify-center mb-4">
                     {tool.logo ? (
-                      <div className="w-16 h-16 flex items-center justify-center p-2 bg-zinc-800 rounded-lg group-hover:bg-zinc-700 transition-all duration-300">
+                      <div className="flex h-14 w-14 items-center justify-center rounded-lg bg-zinc-800 p-2 transition-all duration-300 group-hover:bg-zinc-700 sm:h-16 sm:w-16">
                         <img 
                           src={tool.logo} 
                           alt={tool.name}
@@ -63,12 +63,12 @@ const Software = () => {
                         </div>
                       </div>
                     ) : (
-                      <div className="p-4 bg-zinc-800 rounded-lg group-hover:bg-gradient-to-br group-hover:from-red-600 group-hover:to-red-500 transition-all duration-300">
+                      <div className="rounded-lg bg-zinc-800 p-3 transition-all duration-300 group-hover:bg-gradient-to-br group-hover:from-red-600 group-hover:to-red-500 sm:p-4">
                         {Icon && <Icon className="text-white" size={32} />}
                       </div>
                     )}
                   </div>
-                  <h3 className="text-white font-semibold group-hover:text-red-500 transition-colors text-sm">
+                  <h3 className="text-sm font-semibold text-white transition-colors group-hover:text-red-500 sm:text-base">
                     {tool.name}
                   </h3>
                 </CardContent>

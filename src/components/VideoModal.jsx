@@ -70,15 +70,15 @@ const VideoModal = ({ isOpen, onClose, project }) => {
 
   return (
     <Dialog open={isOpen} onOpenChange={handleModalClose}>
-      <DialogContent className="max-w-5xl bg-zinc-900 border-zinc-800 text-white p-0">
+      <DialogContent className="grid h-[calc(100vh-1rem)] w-[calc(100vw-1rem)] max-w-6xl grid-rows-[auto_minmax(0,1fr)_auto] overflow-hidden border-zinc-800 bg-zinc-900 p-0 text-white sm:h-[calc(100vh-2rem)] sm:w-[calc(100vw-2rem)]">
         {/* Header */}
-        <DialogHeader className="p-6 pb-4 border-b border-zinc-800">
-          <div className="flex items-start justify-between">
+        <DialogHeader className="border-b border-zinc-800 p-4 pb-4 sm:p-6">
+          <div className="flex items-start justify-between gap-4">
             <div className="flex-1">
-              <DialogTitle className="text-2xl font-bold text-white mb-2">
+              <DialogTitle className="mb-2 text-xl font-bold text-white sm:text-2xl">
                 {project.title}
               </DialogTitle>
-              <div className="flex items-center gap-3">
+              <div className="flex flex-wrap items-center gap-2 sm:gap-3">
                 <Badge className="bg-red-600/20 text-red-500 border-red-600/30">
                   {project.category}
                 </Badge>
@@ -96,7 +96,7 @@ const VideoModal = ({ isOpen, onClose, project }) => {
         </DialogHeader>
 
         {/* Content Area */}
-        <div className="relative aspect-video bg-black">
+        <div className="relative min-h-0 bg-black">
           {hasImageGallery ? (
             // Image Gallery with Navigation
             <div className="relative w-full h-full">
@@ -111,14 +111,14 @@ const VideoModal = ({ isOpen, onClose, project }) => {
                 <>
                   <Button
                     onClick={handlePrevImage}
-                    className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/70 hover:bg-black/90 text-white rounded-full p-3"
+                    className="absolute left-2 top-1/2 -translate-y-1/2 rounded-full bg-black/70 p-2 text-white hover:bg-black/90 sm:left-4 sm:p-3"
                     size="icon"
                   >
                     <ChevronLeft size={24} />
                   </Button>
                   <Button
                     onClick={handleNextImage}
-                    className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/70 hover:bg-black/90 text-white rounded-full p-3"
+                    className="absolute right-2 top-1/2 -translate-y-1/2 rounded-full bg-black/70 p-2 text-white hover:bg-black/90 sm:right-4 sm:p-3"
                     size="icon"
                   >
                     <ChevronRight size={24} />
@@ -147,14 +147,14 @@ const VideoModal = ({ isOpen, onClose, project }) => {
               src={project.pdfUrl}
               className="w-full h-full"
               title={project.title}
-              style={{ minHeight: '600px' }}
+              style={{ minHeight: '0' }}
             ></iframe>
           ) : isGraphicDesign ? (
             // Single Image for Graphic Design
             <img
               src={project.thumbnail}
               alt={project.title}
-              className="w-full h-full object-contain"
+              className="h-full w-full object-contain"
             />
           ) : embedUrl ? (
             // Video Player
@@ -164,14 +164,14 @@ const VideoModal = ({ isOpen, onClose, project }) => {
                 controls
                 controlsList="nodownload"
                 autoPlay
-                className="w-full h-full"
+                className="h-full w-full object-contain"
               >
                 Your browser does not support the video tag.
               </video>
             ) : (
               <iframe
                 src={embedUrl}
-                className="w-full h-full"
+                className="h-full w-full"
                 frameBorder="0"
                 allow="autoplay; fullscreen; picture-in-picture"
                 allowFullScreen
@@ -188,7 +188,7 @@ const VideoModal = ({ isOpen, onClose, project }) => {
         </div>
 
         {/* Project Details */}
-        <div className="p-6 space-y-4">
+        <div className="max-h-[26vh] space-y-4 overflow-y-auto border-t border-zinc-800 p-4 sm:max-h-[28vh] sm:p-6">
           <p className="text-gray-300 leading-relaxed">{project.description}</p>
 
           {/* Software Used */}

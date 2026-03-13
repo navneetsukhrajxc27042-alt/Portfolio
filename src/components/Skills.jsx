@@ -5,12 +5,12 @@ import { skills } from '../data/mock';
 
 const Skills = () => {
   return (
-    <section id="skills" className="py-24 bg-black">
-      <div className="max-w-7xl mx-auto px-6">
+    <section id="skills" className="bg-black py-16 sm:py-20 lg:py-24">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div className="mb-12 text-center sm:mb-16">
           <h2
-            className="text-5xl md:text-6xl font-bold mb-4 tracking-tight"
+            className="mb-4 text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl"
             style={{ fontFamily: '"Bebas Neue", sans-serif' }}
           >
             <span className="text-white">My </span>
@@ -19,18 +19,18 @@ const Skills = () => {
             </span>
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-red-600 to-red-500 mx-auto mb-6"></div>
-          <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+          <p className="mx-auto max-w-2xl text-base text-gray-400 sm:text-lg">
             Core competencies that drive exceptional results
           </p>
         </div>
 
         {/* Skills Grid */}
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="mx-auto grid max-w-4xl grid-cols-1 gap-5 sm:gap-6 lg:grid-cols-2 lg:gap-8">
           {skills.map((skill, index) => (
             <Card key={index} className="bg-zinc-900 border-zinc-800 overflow-hidden group">
-              <CardContent className="p-6">
+              <CardContent className="p-5 sm:p-6">
                 <div className="flex justify-between items-center mb-4">
-                  <h3 className="text-xl font-semibold text-white group-hover:text-red-500 transition-colors">
+                  <h3 className="text-lg font-semibold text-white transition-colors group-hover:text-red-500 sm:text-xl">
                     {skill.name}
                   </h3>
                   <span className="text-2xl font-bold text-red-500" style={{ fontFamily: '"Bebas Neue", sans-serif' }}>

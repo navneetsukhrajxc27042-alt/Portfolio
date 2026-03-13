@@ -36,12 +36,12 @@ const Header = () => {
         scrolled ? 'bg-black/95 backdrop-blur-sm shadow-lg' : 'bg-transparent'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 py-4">
+      <div className="mx-auto max-w-7xl px-4 py-3 sm:px-6 sm:py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            className="text-2xl font-bold tracking-tight hover:opacity-80 transition-opacity"
+            className="text-xl font-bold tracking-tight transition-opacity hover:opacity-80 sm:text-2xl"
             style={{ fontFamily: '"Bebas Neue", sans-serif' }}
           >
             <span className="text-white">NAVNEET</span>
@@ -51,7 +51,7 @@ const Header = () => {
           </button>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-8">
+          <nav className="hidden items-center gap-6 md:flex lg:gap-8">
             {navItems.map((item) => (
               <button
                 key={item.id}
@@ -73,7 +73,7 @@ const Header = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden text-white p-2"
+            className="rounded-md p-2 text-white transition-colors hover:bg-white/10 md:hidden"
           >
             {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -81,12 +81,12 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {mobileMenuOpen && (
-          <nav className="md:hidden pt-4 pb-2 flex flex-col gap-4">
+          <nav className="mt-4 flex flex-col gap-2 rounded-2xl border border-zinc-800 bg-black/95 p-4 shadow-2xl md:hidden">
             {navItems.map((item) => (
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="text-gray-300 hover:text-white transition-colors text-left py-2"
+                className="rounded-lg px-3 py-2 text-left text-gray-300 transition-colors hover:bg-white/5 hover:text-white"
               >
                 {item.label}
               </button>

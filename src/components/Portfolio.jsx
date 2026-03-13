@@ -31,12 +31,12 @@ const Portfolio = () => {
   };
 
   return (
-    <section id="portfolio" className="py-24 bg-black">
-      <div className="max-w-7xl mx-auto px-6">
+    <section id="portfolio" className="bg-black py-16 sm:py-20 lg:py-24">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div className="mb-12 text-center sm:mb-16">
           <h2
-            className="text-6xl md:text-7xl font-bold mb-4 tracking-tight"
+            className="mb-4 text-5xl font-bold tracking-tight sm:text-6xl md:text-7xl"
             style={{ fontFamily: '"Bebas Neue", sans-serif' }}
           >
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-red-500">
@@ -44,14 +44,14 @@ const Portfolio = () => {
             </span>
             <span className="text-white"> Work</span>
           </h2>
-          <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+          <p className="mx-auto max-w-2xl text-base text-gray-400 sm:text-lg">
             A curated selection of my best video editing and motion graphics projects
           </p>
         </div>
 
         {/* Filter Buttons */}
-        <div className="flex flex-wrap items-center justify-center gap-3 mb-12">
-          <Filter className="text-gray-500" size={20} />
+        <div className="mb-10 flex flex-wrap items-center justify-center gap-2 sm:mb-12 sm:gap-3">
+          <Filter className="hidden text-gray-500 sm:block" size={20} />
           {categories.map((category) => (
             <Button
               key={category}
@@ -59,8 +59,8 @@ const Portfolio = () => {
               variant={activeFilter === category ? 'default' : 'outline'}
               className={
                 activeFilter === category
-                  ? 'bg-gradient-to-r from-red-600 to-red-500 text-white border-0'
-                  : 'border-gray-700 text-gray-300 hover:border-red-500 hover:text-white bg-transparent'
+                  ? 'border-0 bg-gradient-to-r from-red-600 to-red-500 text-white'
+                  : 'border-gray-700 bg-transparent text-gray-300 hover:border-red-500 hover:text-white'
               }
             >
               {category}
@@ -69,12 +69,12 @@ const Portfolio = () => {
         </div>
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-3">
           {filteredProjects.map((project) => (
             <Card
               key={project.id}
               onClick={() => handleProjectClick(project)}
-              className="bg-zinc-900 border-zinc-800 overflow-hidden group cursor-pointer hover:border-red-500 transition-all duration-300"
+              className="group cursor-pointer overflow-hidden border-zinc-800 bg-zinc-900 transition-all duration-300 hover:border-red-500"
             >
               {/* Thumbnail */}
               <div className="relative aspect-video overflow-hidden">
@@ -108,11 +108,11 @@ const Portfolio = () => {
               </div>
 
               {/* Content */}
-              <CardContent className="p-6">
+              <CardContent className="p-5 sm:p-6">
                 <Badge className="mb-3 bg-red-600/20 text-red-500 border-red-600/30">
                   {project.category}
                 </Badge>
-                <h3 className="text-xl font-bold text-white mb-2 group-hover:text-red-500 transition-colors">
+                <h3 className="mb-2 text-lg font-bold text-white transition-colors group-hover:text-red-500 sm:text-xl">
                   {project.title}
                 </h3>
                 <p className="text-gray-400 text-sm mb-4 line-clamp-2">{project.description}</p>
@@ -132,7 +132,7 @@ const Portfolio = () => {
         </div>
 
         {/* View More */}
-        <div className="text-center mt-12">
+        <div className="mt-10 text-center sm:mt-12">
           <p className="text-gray-500 text-sm">
             {filteredProjects.length} {filteredProjects.length === 1 ? 'project' : 'projects'} displayed
           </p>
