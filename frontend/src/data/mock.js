@@ -44,7 +44,7 @@ export const portfolioProjects = [
     title: "Fries (BattleBucks Ad)",
     category: "Shorts",
     thumbnail: "https://customer-assets.emergentagent.com/job_edit-showcase-pro-9/artifacts/29wn6u1g_image.png",
-    videoUrl: "https://drive.google.com/file/d/1E3yfQqLxWnpLj1Sc6lPq67gLFsqz8Fs6/view?usp=drive_link",
+    videoUrl: "https://customer-assets.emergentagent.com/job_edit-showcase-pro-9/artifacts/tdfe79b2_BatterBucks%20AD.mp4",
     description: "Fast-paced commercial ad with dynamic transitions and modern editing",
     duration: "0:25",
     software: ["Premiere Pro", "After Effects"]
