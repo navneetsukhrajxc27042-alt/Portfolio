@@ -1,0 +1,55 @@
+import React from 'react';
+import { Card, CardContent } from './ui/card';
+import { Progress } from './ui/progress';
+import { skills } from '../data/mock';
+
+const Skills = () => {
+  return (
+    <section id="skills" className="py-24 bg-black">
+      <div className="max-w-7xl mx-auto px-6">
+        {/* Section Header */}
+        <div className="text-center mb-16">
+          <h2
+            className="text-5xl md:text-6xl font-bold mb-4 tracking-tight"
+            style={{ fontFamily: '"Bebas Neue", sans-serif' }}
+          >
+            <span className="text-white">My </span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-red-500">
+              Expertise
+            </span>
+          </h2>
+          <div className="w-20 h-1 bg-gradient-to-r from-red-600 to-red-500 mx-auto mb-6"></div>
+          <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+            Core competencies that drive exceptional results
+          </p>
+        </div>
+
+        {/* Skills Grid */}
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          {skills.map((skill, index) => (
+            <Card key={index} className="bg-zinc-900 border-zinc-800 overflow-hidden group">
+              <CardContent className="p-6">
+                <div className="flex justify-between items-center mb-4">
+                  <h3 className="text-xl font-semibold text-white group-hover:text-red-500 transition-colors">
+                    {skill.name}
+                  </h3>
+                  <span className="text-2xl font-bold text-red-500" style={{ fontFamily: '"Bebas Neue", sans-serif' }}>
+                    {skill.level}%
+                  </span>
+                </div>
+                <div className="relative h-3 bg-zinc-800 rounded-full overflow-hidden">
+                  <div
+                    className="absolute top-0 left-0 h-full bg-gradient-to-r from-red-600 to-red-500 rounded-full transition-all duration-1000 ease-out"
+                    style={{ width: `${skill.level}%` }}
+                  ></div>
+                </div>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Skills;
