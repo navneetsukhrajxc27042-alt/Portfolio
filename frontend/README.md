@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+# Navneet Sukhraj - Video Editing Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A premium video editing and motion graphics portfolio showcasing professional work in commercials, motion graphics, and documentaries.
 
-## Available Scripts
+## 🎬 Features
 
-In the project directory, you can run:
+- **9 Video Projects** - Shorts, Motion Graphics, Documentary
+- **2 Graphic Design Projects** - YouTube thumbnails & Mood boards
+- **Premium RED + BLACK Design** - Modern, clean aesthetic
+- **Fully Responsive** - Works on all devices
+- **Fast Loading** - Optimized performance
+- **Contact Section** - Direct email & WhatsApp links
 
-### `npm start`
+## 🛠️ Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Frontend**: React 19, Tailwind CSS
+- **UI Components**: shadcn/ui (Radix UI)
+- **Icons**: Lucide React
+- **Build Tool**: CRACO (Create React App)
+- **Fonts**: Bebas Neue, Inter
+- **Hosting**: Vercel
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🚀 Quick Start
 
-### `npm test`
+### Install Dependencies
+```bash
+yarn install
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Run Development Server
+```bash
+yarn start
+```
 
-### `npm run build`
+### Build for Production
+```bash
+yarn build
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📦 Project Structure
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+src/
+├── components/
+│   ├── Header.jsx          # Navigation
+│   ├── Hero.jsx            # Hero section
+│   ├── Portfolio.jsx       # Video projects gallery
+│   ├── About.jsx           # About section
+│   ├── Skills.jsx          # Skills showcase
+│   ├── Software.jsx        # Tools used
+│   ├── Contact.jsx         # Contact info
+│   ├── Footer.jsx          # Footer
+│   ├── VideoModal.jsx      # Video player modal
+│   └── ui/                 # shadcn components
+├── data/
+│   └── mock.js             # Portfolio data
+├── App.js                  # Main app
+└── index.css               # Global styles
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🎨 Customization
 
-### `npm run eject`
+### Update Portfolio Content
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Edit `/src/data/mock.js` to update:
+- Video projects
+- Graphic design work
+- Skills & experience
+- Software tools
+- Contact information
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Change Colors
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The color scheme is defined in `/src/index.css` using CSS variables.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 📄 License
 
-## Learn More
+© 2025 Navneet Sukhraj. All rights reserved.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📧 Contact
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **Email**: navneetsukhraj.xc.27042@gmail.com
+- **WhatsApp**: +91 9917109665
+- **Location**: VPO Sofi Pind, Jalandhar, Punjab, India
