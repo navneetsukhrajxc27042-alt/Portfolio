@@ -105,6 +105,15 @@ export const graphicDesigns = [
     ],
     description: "Eye-catching YouTube thumbnails for gaming and entertainment content featuring bold typography and vibrant compositions",
     software: ["Photoshop", "Illustrator"]
+  },
+  {
+    id: 11,
+    title: "Fuel Mood Board",
+    category: "Graphic Design",
+    thumbnail: "https://customer-assets.emergentagent.com/job_edit-showcase-pro-9/artifacts/spgxhy8e_image.png",
+    videoUrl: "",
+    description: "Energy drink brand mood board showcasing product photography, color palette, and visual brand identity",
+    software: ["Photoshop", "Illustrator"]
   }
 ];
 
