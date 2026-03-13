@@ -74,7 +74,7 @@ export const portfolioProjects = [
     title: "Acer India + Stan",
     category: "Shorts",
     thumbnail: "https://customer-assets.emergentagent.com/job_edit-showcase-pro-9/artifacts/mbsv1lb2_image.png",
-    videoUrl: "https://drive.google.com/file/d/1A_E6KWfcs9-i_NjUTGGYv4C4ouKg7_R5/view?usp=drive_link",
+    videoUrl: "https://customer-assets.emergentagent.com/job_edit-showcase-pro-9/artifacts/xjt8ss3g_WhatsApp%20Video%202026-03-13%20at%2012.07.48%20PM.mp4",
     description: "5 Lucky Winners brand collaboration featuring dynamic product showcase",
     duration: "0:35",
     software: ["Premiere Pro", "After Effects"]
