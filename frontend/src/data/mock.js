@@ -71,13 +71,23 @@ export const portfolioProjects = [
   },
   {
     id: 8,
-    title: "Brand Identity Animation",
-    category: "Motion Graphics",
-    thumbnail: "https://images.unsplash.com/photo-1732032506091-6fd57cc3113e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNDR8MHwxfHNlYXJjaHwzfHxtb3Rpb24lMjBncmFwaGljc3xlbnwwfHx8fDE3NzMzODAwNTV8MA&ixlib=rb-4.1.0&q=85",
-    videoUrl: "https://vimeo.com/148751763", // ← REPLACE with YOUR video link
-    description: "Logo reveal and brand animation package for corporate client",
+    title: "Acer India + Stan",
+    category: "Shorts",
+    thumbnail: "https://customer-assets.emergentagent.com/job_edit-showcase-pro-9/artifacts/mbsv1lb2_image.png",
+    videoUrl: "https://drive.google.com/file/d/1A_E6KWfcs9-i_NjUTGGYv4C4ouKg7_R5/view?usp=drive_link",
+    description: "5 Lucky Winners brand collaboration featuring dynamic product showcase",
+    duration: "0:35",
+    software: ["Premiere Pro", "After Effects"]
+  },
+  {
+    id: 9,
+    title: "3D Loop Urus Edit",
+    category: "Shorts",
+    thumbnail: "https://customer-assets.emergentagent.com/job_edit-showcase-pro-9/artifacts/diwsdpi3_image.png",
+    videoUrl: "https://drive.google.com/file/d/1qJcsHti6M6wbluvH_gN19JbU2gGB7zzC/view?usp=drive_link",
+    description: "Cinematic 3D car edit with seamless loop animation and motion tracking",
     duration: "0:20",
-    software: ["After Effects", "Illustrator"]
+    software: ["Premiere Pro", "After Effects", "Blender"]
   }
 ];
 
