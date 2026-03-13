@@ -1,52 +1,26 @@
-import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import React from 'react';
+import { Mail, Phone, MapPin } from 'lucide-react';
 import { Card, CardContent } from './ui/card';
-import { Input } from './ui/input';
-import { Textarea } from './ui/textarea';
-import { Button } from './ui/button';
-import { useToast } from '../hooks/use-toast';
 
 const Contact = () => {
-  const { toast } = useToast();
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
-  });
-
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Mock form submission
-    toast({
-      title: "Message Sent!",
-      description: "Thank you for reaching out. I'll get back to you soon.",
-    });
-    setFormData({ name: '', email: '', subject: '', message: '' });
-  };
-
   const contactInfo = [
     {
       icon: <Mail className="text-red-500" size={24} />,
       label: 'Email',
-      value: 'navneetsukhraj.xc.27042@gmail.com'
+      value: 'navneetsukhraj.xc.27042@gmail.com',
+      link: 'mailto:navneetsukhraj.xc.27042@gmail.com'
     },
     {
       icon: <Phone className="text-red-500" size={24} />,
       label: 'WhatsApp',
-      value: '+91 9917109665'
+      value: '+91 9917109665',
+      link: 'https://wa.me/919917109665'
     },
     {
       icon: <MapPin className="text-red-500" size={24} />,
       label: 'Location',
-      value: 'VPO Sofi Pind, Jalandhar, Punjab, India'
+      value: 'VPO Sofi Pind, Jalandhar, Punjab, India',
+      link: null
     }
   ];
 
@@ -70,88 +44,44 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12">
-          {/* Contact Info */}
-          <div className="space-y-8">
-            <div>
-              <h3 className="text-3xl font-bold text-white mb-6" style={{ fontFamily: '"Bebas Neue", sans-serif' }}>
-                Let's Talk
-              </h3>
-              <p className="text-gray-400 mb-8 leading-relaxed">
-                I'm always open to discussing new projects, creative ideas, or opportunities to be
-                part of your vision. Feel free to reach out through any of the channels below.
-              </p>
-            </div>
-
+        {/* Contact Cards */}
+        <div className="max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-6">
             {contactInfo.map((info, index) => (
-              <Card key={index} className="bg-zinc-900 border-zinc-800">
-                <CardContent className="p-6 flex items-center gap-4">
-                  <div className="p-3 bg-zinc-800 rounded-lg">{info.icon}</div>
-                  <div>
-                    <div className="text-sm text-gray-500 mb-1">{info.label}</div>
-                    <div className="text-white font-medium">{info.value}</div>
+              <Card
+                key={index}
+                className="bg-zinc-900 border-zinc-800 hover:border-red-500 transition-all duration-300 group"
+              >
+                <CardContent className="p-8 text-center">
+                  <div className="flex justify-center mb-4">
+                    <div className="p-4 bg-zinc-800 rounded-lg group-hover:bg-gradient-to-br group-hover:from-red-600/20 group-hover:to-red-500/20 transition-all duration-300">
+                      {info.icon}
+                    </div>
                   </div>
+                  <div className="text-sm text-gray-500 mb-2">{info.label}</div>
+                  {info.link ? (
+                    <a
+                      href={info.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-white font-medium hover:text-red-500 transition-colors break-all"
+                    >
+                      {info.value}
+                    </a>
+                  ) : (
+                    <div className="text-white font-medium break-all">{info.value}</div>
+                  )}
                 </CardContent>
               </Card>
             ))}
           </div>
 
-          {/* Contact Form */}
-          <Card className="bg-zinc-900 border-zinc-800">
-            <CardContent className="p-8">
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div>
-                  <Input
-                    name="name"
-                    placeholder="Your Name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    required
-                    className="bg-zinc-800 border-zinc-700 text-white placeholder:text-gray-500 focus:border-red-500"
-                  />
-                </div>
-                <div>
-                  <Input
-                    name="email"
-                    type="email"
-                    placeholder="Your Email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                    className="bg-zinc-800 border-zinc-700 text-white placeholder:text-gray-500 focus:border-red-500"
-                  />
-                </div>
-                <div>
-                  <Input
-                    name="subject"
-                    placeholder="Subject"
-                    value={formData.subject}
-                    onChange={handleChange}
-                    required
-                    className="bg-zinc-800 border-zinc-700 text-white placeholder:text-gray-500 focus:border-red-500"
-                  />
-                </div>
-                <div>
-                  <Textarea
-                    name="message"
-                    placeholder="Your Message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    required
-                    rows={6}
-                    className="bg-zinc-800 border-zinc-700 text-white placeholder:text-gray-500 focus:border-red-500 resize-none"
-                  />
-                </div>
-                <Button
-                  type="submit"
-                  className="w-full bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white py-6 text-lg"
-                >
-                  <Send className="mr-2" size={20} />
-                  Send Message
-                </Button>
-              </form>
-            </CardContent>
-          </Card>
+          {/* Additional Message */}
+          <div className="text-center mt-12">
+            <p className="text-gray-400 text-lg">
+              Feel free to reach out via email or WhatsApp. I typically respond within 24 hours.
+            </p>
+          </div>
         </div>
       </div>
     </section>
