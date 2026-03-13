@@ -112,14 +112,46 @@ export const skills = [
 ];
 
 export const softwareTools = [
-  { name: "Adobe Premiere Pro", icon: "Film" },
-  { name: "After Effects", icon: "Sparkles" },
-  { name: "DaVinci Resolve", icon: "Palette" },
-  { name: "Cinema 4D", icon: "Box" },
-  { name: "Photoshop", icon: "Image" },
-  { name: "Illustrator", icon: "PenTool" },
-  { name: "Audition", icon: "Headphones" },
-  { name: "Figma", icon: "Layers" }
+  { 
+    name: "Adobe Premiere Pro", 
+    icon: "Film",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/4/40/Adobe_Premiere_Pro_CC_icon.svg"
+  },
+  { 
+    name: "After Effects", 
+    icon: "Sparkles",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Adobe_After_Effects_CC_icon.svg"
+  },
+  { 
+    name: "Photoshop", 
+    icon: "Image",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg"
+  },
+  { 
+    name: "Illustrator", 
+    icon: "PenTool",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg"
+  },
+  { 
+    name: "Blender", 
+    icon: "Box",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/0/0c/Blender_logo_no_text.svg"
+  },
+  { 
+    name: "Adobe Animate", 
+    icon: "Sparkles",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/8/84/Adobe_Animate_CC_icon_%282020%29.svg"
+  },
+  { 
+    name: "Unreal Engine", 
+    icon: "Box",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/d/da/Unreal_Engine_Logo.svg"
+  },
+  { 
+    name: "Audition", 
+    icon: "Headphones",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/0/0e/Adobe_Audition_CC_icon_%282020%29.svg"
+  }
 ];
 
 export const aboutData = {

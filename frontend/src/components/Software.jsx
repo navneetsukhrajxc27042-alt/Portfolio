@@ -46,11 +46,29 @@ const Software = () => {
               >
                 <CardContent className="p-8 text-center">
                   <div className="flex justify-center mb-4">
-                    <div className="p-4 bg-zinc-800 rounded-lg group-hover:bg-gradient-to-br group-hover:from-red-600 group-hover:to-red-500 transition-all duration-300">
-                      <Icon className="text-white" size={32} />
-                    </div>
+                    {tool.logo ? (
+                      <div className="w-16 h-16 flex items-center justify-center p-2 bg-zinc-800 rounded-lg group-hover:bg-zinc-700 transition-all duration-300">
+                        <img 
+                          src={tool.logo} 
+                          alt={tool.name}
+                          className="w-full h-full object-contain"
+                          onError={(e) => {
+                            // Fallback to icon if logo fails to load
+                            e.target.style.display = 'none';
+                            e.target.nextElementSibling.style.display = 'block';
+                          }}
+                        />
+                        <div style={{ display: 'none' }}>
+                          {Icon && <Icon className="text-white" size={32} />}
+                        </div>
+                      </div>
+                    ) : (
+                      <div className="p-4 bg-zinc-800 rounded-lg group-hover:bg-gradient-to-br group-hover:from-red-600 group-hover:to-red-500 transition-all duration-300">
+                        {Icon && <Icon className="text-white" size={32} />}
+                      </div>
+                    )}
                   </div>
-                  <h3 className="text-white font-semibold group-hover:text-red-500 transition-colors">
+                  <h3 className="text-white font-semibold group-hover:text-red-500 transition-colors text-sm">
                     {tool.name}
                   </h3>
                 </CardContent>
