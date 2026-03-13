@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { X, ExternalLink, ChevronLeft, ChevronRight } from 'lucide-react';
+import { ExternalLink, ChevronLeft, ChevronRight } from 'lucide-react';
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from './ui/dialog';
 import { Button } from './ui/button';
 import { Badge } from './ui/badge';
@@ -91,14 +91,6 @@ const VideoModal = ({ isOpen, onClose, project }) => {
                 )}
               </div>
             </div>
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={handleModalClose}
-              className="text-gray-400 hover:text-white hover:bg-zinc-800"
-            >
-              <X size={24} />
-            </Button>
           </div>
         </DialogHeader>
 
