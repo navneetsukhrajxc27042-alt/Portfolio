@@ -172,8 +172,8 @@ export const softwareTools = [
 export const aboutData = {
   name: "Navneet Sukhraj",
   tagline: "Video Editor & Motion Designer",
-  bio: "With over 3 years of experience in video editing and motion graphics, I transform raw footage into compelling visual stories. My work spans across commercials, documentaries, and digital content, bringing creative visions to life through meticulous editing and innovative motion design.",
-  experience: "3+ Years",
+  bio: "With over 2 years of experience in video editing and motion graphics, I transform raw footage into compelling visual stories. My work spans across commercials, documentaries, and digital content, bringing creative visions to life through meticulous editing and innovative motion design.",
+  experience: "2+ Years",
   projectsCompleted: "30+",
   happyClients: "10+",
   image: "https://images.unsplash.com/photo-1603400938371-d030ad03505b"
