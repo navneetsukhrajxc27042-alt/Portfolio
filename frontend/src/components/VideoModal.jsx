@@ -1,11 +1,17 @@
-import React from 'react';
-import { X, ExternalLink } from 'lucide-react';
+import React, { useState } from 'react';
+import { X, ExternalLink, ChevronLeft, ChevronRight } from 'lucide-react';
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from './ui/dialog';
 import { Button } from './ui/button';
 import { Badge } from './ui/badge';
 
 const VideoModal = ({ isOpen, onClose, project }) => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
   if (!project) return null;
+
+  // Check if project has multiple images (graphic design with gallery)
+  const hasImageGallery = project.images && project.images.length > 0;
+  const isGraphicDesign = project.category === 'Graphic Design';
 
   // Function to get embeddable video URL
   const getEmbedUrl = (url) => {
@@ -44,8 +50,25 @@ const VideoModal = ({ isOpen, onClose, project }) => {
   const embedUrl = getEmbedUrl(project.videoUrl);
   const isDirect = project.videoUrl?.match(/\.(mp4|webm|ogg)$/i);
 
+  const handlePrevImage = () => {
+    setCurrentImageIndex((prev) => 
+      prev === 0 ? project.images.length - 1 : prev - 1
+    );
+  };
+
+  const handleNextImage = () => {
+    setCurrentImageIndex((prev) => 
+      prev === project.images.length - 1 ? 0 : prev + 1
+    );
+  };
+
+  const handleModalClose = () => {
+    setCurrentImageIndex(0);
+    onClose();
+  };
+
   return (
-    <Dialog open={isOpen} onOpenChange={onClose}>
+    <Dialog open={isOpen} onOpenChange={handleModalClose}>
       <DialogContent className="max-w-5xl bg-zinc-900 border-zinc-800 text-white p-0">
         {/* Header */}
         <DialogHeader className="p-6 pb-4 border-b border-zinc-800">
@@ -61,12 +84,17 @@ const VideoModal = ({ isOpen, onClose, project }) => {
                 {project.duration && (
                   <span className="text-sm text-gray-400">{project.duration}</span>
                 )}
+                {hasImageGallery && (
+                  <span className="text-sm text-gray-400">
+                    {currentImageIndex + 1} / {project.images.length}
+                  </span>
+                )}
               </div>
             </div>
             <Button
               variant="ghost"
               size="icon"
-              onClick={onClose}
+              onClick={handleModalClose}
               className="text-gray-400 hover:text-white hover:bg-zinc-800"
             >
               <X size={24} />
@@ -74,9 +102,61 @@ const VideoModal = ({ isOpen, onClose, project }) => {
           </div>
         </DialogHeader>
 
-        {/* Video Player */}
+        {/* Content Area */}
         <div className="relative aspect-video bg-black">
-          {embedUrl ? (
+          {hasImageGallery ? (
+            // Image Gallery with Navigation
+            <div className="relative w-full h-full">
+              <img
+                src={project.images[currentImageIndex]}
+                alt={`${project.title} - ${currentImageIndex + 1}`}
+                className="w-full h-full object-contain"
+              />
+              
+              {/* Navigation Arrows */}
+              {project.images.length > 1 && (
+                <>
+                  <Button
+                    onClick={handlePrevImage}
+                    className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/70 hover:bg-black/90 text-white rounded-full p-3"
+                    size="icon"
+                  >
+                    <ChevronLeft size={24} />
+                  </Button>
+                  <Button
+                    onClick={handleNextImage}
+                    className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/70 hover:bg-black/90 text-white rounded-full p-3"
+                    size="icon"
+                  >
+                    <ChevronRight size={24} />
+                  </Button>
+                </>
+              )}
+
+              {/* Thumbnail Dots */}
+              <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+                {project.images.map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => setCurrentImageIndex(index)}
+                    className={`w-2 h-2 rounded-full transition-all ${
+                      index === currentImageIndex
+                        ? 'bg-red-500 w-8'
+                        : 'bg-gray-400 hover:bg-gray-300'
+                    }`}
+                  />
+                ))}
+              </div>
+            </div>
+          ) : isGraphicDesign ? (
+            // Single Image for Graphic Design
+            <img
+              src={project.thumbnail}
+              alt={project.title}
+              className="w-full h-full object-contain"
+            />
+          ) : embedUrl ? (
+            // Video Player
             isDirect ? (
               <video
                 src={embedUrl}
@@ -138,7 +218,7 @@ const VideoModal = ({ isOpen, onClose, project }) => {
           )}
 
           {/* External Link */}
-          {project.videoUrl && (
+          {project.videoUrl && !isGraphicDesign && (
             <div className="pt-2">
               <a
                 href={project.videoUrl}

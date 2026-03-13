@@ -93,22 +93,18 @@ export const portfolioProjects = [
 
 export const graphicDesigns = [
   {
-    id: 9,
-    title: "Advertising Campaign Poster",
-    category: "Graphic Design",
-    thumbnail: "https://images.unsplash.com/photo-1712757057495-016f69c8edbd?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODF8MHwxfHNlYXJjaHwzfHxjb21tZXJjaWFsJTIwYWR2ZXJ0aXNpbmd8ZW58MHx8fHwxNzczMzgwMDU5fDA&ixlib=rb-4.1.0&q=85",
-    videoUrl: "", // Graphic designs don't need video links
-    description: "Bold visual campaign for fashion brand launch",
-    software: ["Photoshop", "Illustrator"]
-  },
-  {
     id: 10,
-    title: "Social Media Graphics Pack",
+    title: "YouTube Thumbnails Collection",
     category: "Graphic Design",
-    thumbnail: "https://images.unsplash.com/photo-1613324295610-00b422bfc618?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2OTV8MHwxfHNlYXJjaHwyfHxkb2N1bWVudGFyeSUyMGZpbG1tYWtpbmd8ZW58MHx8fHwxNzczMzgwMDgxfDA&ixlib=rb-4.1.0&q=85",
-    videoUrl: "", // Graphic designs don't need video links
-    description: "Cohesive design system for social media presence",
-    software: ["Photoshop", "Figma"]
+    thumbnail: "https://customer-assets.emergentagent.com/job_edit-showcase-pro-9/artifacts/j6bo0x8d_1.jpg",
+    videoUrl: "",
+    images: [
+      "https://customer-assets.emergentagent.com/job_edit-showcase-pro-9/artifacts/j6bo0x8d_1.jpg",
+      "https://customer-assets.emergentagent.com/job_edit-showcase-pro-9/artifacts/jqkysxkb_2.jpg",
+      "https://customer-assets.emergentagent.com/job_edit-showcase-pro-9/artifacts/rq5p4ra1_3.jpg"
+    ],
+    description: "Eye-catching YouTube thumbnails for gaming and entertainment content featuring bold typography and vibrant compositions",
+    software: ["Photoshop", "Illustrator"]
   }
 ];
 
