@@ -84,7 +84,7 @@ export const portfolioProjects = [
     title: "3D Loop Urus Edit",
     category: "Shorts",
     thumbnail: "https://customer-assets.emergentagent.com/job_edit-showcase-pro-9/artifacts/diwsdpi3_image.png",
-    videoUrl: "https://drive.google.com/file/d/1qJcsHti6M6wbluvH_gN19JbU2gGB7zzC/view?usp=drive_link",
+    videoUrl: "https://customer-assets.emergentagent.com/job_edit-showcase-pro-9/artifacts/63db1bza_3D%20loop%20Urus%20edit.mp4",
     description: "Cinematic 3D car edit with seamless loop animation and motion tracking",
     duration: "0:20",
     software: ["Premiere Pro", "After Effects", "Blender"]
