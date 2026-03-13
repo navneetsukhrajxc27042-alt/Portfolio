@@ -112,7 +112,7 @@ export const graphicDesigns = [
     category: "Graphic Design",
     thumbnail: "https://customer-assets.emergentagent.com/job_edit-showcase-pro-9/artifacts/spgxhy8e_image.png",
     videoUrl: "",
-    pdfUrl: "https://customer-assets.emergentagent.com/job_edit-showcase-pro-9/artifacts/y3934fl6_Fuel.pdf",
+    pdfUrl: "https://customer-assets.emergentagent.com/job_edit-showcase-pro-9/artifacts/hphfmpe7_Fuel.pdf",
     description: "Energy drink brand mood board showcasing product photography, color palette, and visual brand identity",
     software: ["Photoshop", "Illustrator"]
   }
