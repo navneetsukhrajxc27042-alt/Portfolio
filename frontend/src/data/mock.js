@@ -4,7 +4,7 @@ export const portfolioProjects = [
     title: "Tech Brand Commercial",
     category: "Short Ad",
     thumbnail: "https://images.unsplash.com/photo-1632187989763-c9c620420b4d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NjZ8MHwxfHNlYXJjaHwyfHx2aWRlbyUyMHByb2R1Y3Rpb258ZW58MHx8fHwxNzczMzgwMDUyfDA&ixlib=rb-4.1.0&q=85",
-    videoUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ", // ← REPLACE with YOUR video link
+    videoUrl: "https://drive.google.com/file/d/1ZUHN0xfhLor8-x1dP-TPdzfdtkYihJeo/view?usp=drive_link",
     description: "High-energy commercial spot for tech startup featuring dynamic motion graphics",
     duration: "0:30",
     software: ["Premiere Pro", "After Effects"]
