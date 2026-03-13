@@ -12,6 +12,7 @@ const VideoModal = ({ isOpen, onClose, project }) => {
   // Check if project has multiple images (graphic design with gallery)
   const hasImageGallery = project.images && project.images.length > 0;
   const isGraphicDesign = project.category === 'Graphic Design';
+  const hasPDF = project.pdfUrl;
 
   // Function to get embeddable video URL
   const getEmbedUrl = (url) => {
@@ -140,6 +141,14 @@ const VideoModal = ({ isOpen, onClose, project }) => {
                 ))}
               </div>
             </div>
+          ) : hasPDF ? (
+            // PDF Viewer
+            <iframe
+              src={project.pdfUrl}
+              className="w-full h-full"
+              title={project.title}
+              style={{ minHeight: '600px' }}
+            ></iframe>
           ) : isGraphicDesign ? (
             // Single Image for Graphic Design
             <img
