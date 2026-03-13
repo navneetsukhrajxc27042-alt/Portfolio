@@ -36,17 +36,17 @@ const Contact = () => {
     {
       icon: <Mail className="text-red-500" size={24} />,
       label: 'Email',
-      value: 'navneet@example.com'
+      value: 'navneetsukhraj.xc.27042@gmail.com'
     },
     {
       icon: <Phone className="text-red-500" size={24} />,
-      label: 'Phone',
-      value: '+1 (555) 123-4567'
+      label: 'WhatsApp',
+      value: '+91 9917109665'
     },
     {
       icon: <MapPin className="text-red-500" size={24} />,
       label: 'Location',
-      value: 'Los Angeles, CA'
+      value: 'VPO Sofi Pind, Jalandhar, Punjab, India'
     }
   ];
 
