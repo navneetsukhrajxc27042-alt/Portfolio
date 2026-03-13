@@ -4,7 +4,7 @@ export const portfolioProjects = [
     title: "STAN App Commercial",
     category: "Motion Graphics",
     thumbnail: "https://customer-assets.emergentagent.com/job_edit-showcase-pro-9/artifacts/yfbazx0d_image.png",
-    videoUrl: "https://drive.google.com/file/d/1ZUHN0xfhLor8-x1dP-TPdzfdtkYihJeo/view?usp=drive_link",
+    videoUrl: "https://customer-assets.emergentagent.com/job_edit-showcase-pro-9/artifacts/y37mq4u0_STANxGEMINI%28motion%20graphics%29.mp4",
     description: "High-energy commercial spot for tech startup featuring dynamic motion graphics",
     duration: "0:30",
     software: ["Premiere Pro", "After Effects"]
@@ -14,7 +14,7 @@ export const portfolioProjects = [
     title: "At The Time - Short Edit",
     category: "Shorts",
     thumbnail: "https://customer-assets.emergentagent.com/job_edit-showcase-pro-9/artifacts/8tlwqv83_image.png",
-    videoUrl: "https://drive.google.com/file/d/1BOe_LLaFvJDebWjCUNGqpGx8OuVMWz5f/view?usp=drive_link",
+    videoUrl: "https://customer-assets.emergentagent.com/job_edit-showcase-pro-9/artifacts/5tukbror_Edit_2.mp4",
     description: "Dynamic split-screen storytelling with precise timing and transitions",
     duration: "0:45",
     software: ["Premiere Pro", "After Effects"]
@@ -24,7 +24,7 @@ export const portfolioProjects = [
     title: "Lazy Assassin Edit Recreate",
     category: "Shorts",
     thumbnail: "https://customer-assets.emergentagent.com/job_edit-showcase-pro-9/artifacts/c343qvgs_Screenshot%202026-03-13%20114340.png",
-    videoUrl: "https://drive.google.com/file/d/1cHjJnT5RNeVxuIFoJtz_9KN8b8aQh_vI/view?usp=sharing",
+    videoUrl: "https://customer-assets.emergentagent.com/job_edit-showcase-pro-9/artifacts/i6oej85j_Lazy%20assassin%20video%20edit.mp4",
     description: "Raw clip transformation with creative editing and motion graphics overlay",
     duration: "0:35",
     software: ["Premiere Pro", "After Effects"]
@@ -34,7 +34,7 @@ export const portfolioProjects = [
     title: "Fast-Paced YouTube Shorts Edit",
     category: "Shorts",
     thumbnail: "https://customer-assets.emergentagent.com/job_edit-showcase-pro-9/artifacts/v7hjetne_image.png",
-    videoUrl: "https://drive.google.com/file/d/1hJwtLP4GxVnRVF0humjQwp20BQDHfXXm/view?usp=sharing",
+    videoUrl: "https://customer-assets.emergentagent.com/job_edit-showcase-pro-9/artifacts/1s0qhnst_30%20sec%20reel%202.mp4",
     description: "Engaging short-form content with text overlays and visual effects",
     duration: "0:40",
     software: ["Premiere Pro", "After Effects"]
@@ -64,7 +64,7 @@ export const portfolioProjects = [
     title: "Velocity Edit",
     category: "Shorts",
     thumbnail: "https://customer-assets.emergentagent.com/job_edit-showcase-pro-9/artifacts/6fmyljid_image.png",
-    videoUrl: "https://drive.google.com/file/d/1rNZIoQARA9aFurT8QjnBFf1R8EYLMOH8/view?usp=drive_link",
+    videoUrl: "https://customer-assets.emergentagent.com/job_edit-showcase-pro-9/artifacts/jxmbo55v_Velocity%20.mp4",
     description: "High-speed editing showcase featuring car graphics and dynamic motion design",
     duration: "0:30",
     software: ["Premiere Pro", "After Effects"]
