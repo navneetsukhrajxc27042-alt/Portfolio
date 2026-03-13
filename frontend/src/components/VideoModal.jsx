@@ -153,6 +153,7 @@ const VideoModal = ({ isOpen, onClose, project }) => {
               <video
                 src={embedUrl}
                 controls
+                controlsList="nodownload"
                 autoPlay
                 className="w-full h-full"
               >
