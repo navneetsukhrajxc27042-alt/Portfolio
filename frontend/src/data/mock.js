@@ -155,7 +155,7 @@ export const softwareTools = [
   { 
     name: "Adobe Animate", 
     icon: "Sparkles",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/8/84/Adobe_Animate_CC_icon_%282020%29.svg"
+    logo: "https://customer-assets.emergentagent.com/job_edit-showcase-pro-9/artifacts/k9bus8au_adobe-animate-logo.webp"
   },
   { 
     name: "Unreal Engine", 
@@ -172,8 +172,8 @@ export const softwareTools = [
 export const aboutData = {
   name: "Navneet Sukhraj",
   tagline: "Video Editor & Motion Designer",
-  bio: "With over 5 years of experience in video editing and motion graphics, I transform raw footage into compelling visual stories. My work spans across commercials, documentaries, and digital content, bringing creative visions to life through meticulous editing and innovative motion design.",
-  experience: "5+ Years",
+  bio: "With over 4 years of experience in video editing and motion graphics, I transform raw footage into compelling visual stories. My work spans across commercials, documentaries, and digital content, bringing creative visions to life through meticulous editing and innovative motion design.",
+  experience: "4+ Years",
   projectsCompleted: "150+",
   happyClients: "80+",
   image: "https://images.unsplash.com/photo-1603400938371-d030ad03505b"
