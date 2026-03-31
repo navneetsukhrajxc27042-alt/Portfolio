@@ -86,7 +86,7 @@ export const portfolioProjects = [
     thumbnail: "/thumbnails/3d-cinematic.png",
     videoUrl: "https://drive.google.com/file/d/1xPCWAkZSCQdrlgEa-tKTauYks8vwhjEa/view?usp=drive_link",
     description: "A cinematic 3D environment crafted in Unreal Engine and Blender, blending lighting, textures, and atmosphere to create a visually immersive experience.",
-    duration: "0:45",
+    duration: "0:29",
     software: ["Unreal Engine", "Blender"]
   },
   {
@@ -96,7 +96,7 @@ export const portfolioProjects = [
     thumbnail: "/thumbnails/gamezone-thumbnail.png",
     videoUrl: "https://drive.google.com/file/d/12mKX0_0tKxEB5YeCrvJRXR-rxUB-SeYj/view?usp=sharing",
     description: "Designed and animated using Adobe After Effects, highlighting strong motion graphics skills, smooth transitions, and attention to visual detail.",
-    duration: "0:30",
+    duration: "0:15",
     software: ["After Effects"]
   },
   {
@@ -106,7 +106,7 @@ export const portfolioProjects = [
     thumbnail: "/thumbnails/new-sequence.png",
     videoUrl: "https://drive.google.com/file/d/12ahempOFFgwRzSjkm95vrLzqTgr2YGwQ/view?usp=drive_link",
     description: "Created this cinematic sequence using Unreal Engine 5, focusing on lighting, composition, and real-time rendering to achieve a visually immersive result.",
-    duration: "0:40",
+    duration: "0:09",
     software: ["Unreal Engine"]
   }
 ];
