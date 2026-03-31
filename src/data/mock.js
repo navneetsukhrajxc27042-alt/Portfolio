@@ -70,16 +70,6 @@ export const portfolioProjects = [
     software: ["Premiere Pro", "After Effects"]
   },
   {
-    id: 8,
-    title: "Acer India + Stan",
-    category: "Shorts",
-    thumbnail: "https://customer-assets.emergentagent.com/job_edit-showcase-pro-9/artifacts/mbsv1lb2_image.png",
-    videoUrl: "https://customer-assets.emergentagent.com/job_edit-showcase-pro-9/artifacts/xjt8ss3g_WhatsApp%20Video%202026-03-13%20at%2012.07.48%20PM.mp4",
-    description: "5 Lucky Winners brand collaboration featuring dynamic product showcase",
-    duration: "0:21",
-    software: ["Premiere Pro", "After Effects"]
-  },
-  {
     id: 9,
     title: "3D Loop Urus Edit",
     category: "Shorts",
@@ -88,12 +78,42 @@ export const portfolioProjects = [
     description: "Cinematic 3D car edit with seamless loop animation and motion tracking",
     duration: "0:30",
     software: ["Premiere Pro", "After Effects", "Blender"]
+  },
+  {
+    id: 10,
+    title: "A Cinematic World Built in Unreal Engine",
+    category: "3D Cinematics",
+    thumbnail: "/thumbnails/3d-cinematic.png",
+    videoUrl: "https://drive.google.com/file/d/1xPCWAkZSCQdrlgEa-tKTauYks8vwhjEa/view?usp=drive_link",
+    description: "A cinematic 3D environment crafted in Unreal Engine and Blender, blending lighting, textures, and atmosphere to create a visually immersive experience.",
+    duration: "0:45",
+    software: ["Unreal Engine", "Blender"]
+  },
+  {
+    id: 13,
+    title: "Visual Storytelling Through Motion",
+    category: "Motion Graphics",
+    thumbnail: "/thumbnails/gamezone-thumbnail.png",
+    videoUrl: "https://drive.google.com/file/d/12mKX0_0tKxEB5YeCrvJRXR-rxUB-SeYj/view?usp=sharing",
+    description: "Designed and animated using Adobe After Effects, highlighting strong motion graphics skills, smooth transitions, and attention to visual detail.",
+    duration: "0:30",
+    software: ["After Effects"]
+  },
+  {
+    id: 14,
+    title: "Insane Cinematic Shot Using Unreal Engine",
+    category: "3D Cinematics",
+    thumbnail: "/thumbnails/new-sequence.png",
+    videoUrl: "https://drive.google.com/file/d/12ahempOFFgwRzSjkm95vrLzqTgr2YGwQ/view?usp=drive_link",
+    description: "Created this cinematic sequence using Unreal Engine 5, focusing on lighting, composition, and real-time rendering to achieve a visually immersive result.",
+    duration: "0:40",
+    software: ["Unreal Engine"]
   }
 ];
 
 export const graphicDesigns = [
   {
-    id: 10,
+    id: 11,
     title: "YouTube Thumbnails Collection",
     category: "Graphic Design",
     thumbnail: "https://customer-assets.emergentagent.com/job_edit-showcase-pro-9/artifacts/j6bo0x8d_1.jpg",
@@ -107,7 +127,7 @@ export const graphicDesigns = [
     software: ["Photoshop", "Illustrator"]
   },
   {
-    id: 11,
+    id: 12,
     title: "Fuel Mood Board",
     category: "Graphic Design",
     thumbnail: "https://customer-assets.emergentagent.com/job_edit-showcase-pro-9/artifacts/27262dpd_Fuel_page-0001.jpg",

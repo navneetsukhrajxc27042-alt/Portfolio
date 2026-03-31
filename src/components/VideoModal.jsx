@@ -3,6 +3,7 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from './ui/dialog';
 import { Button } from './ui/button';
 import { Badge } from './ui/badge';
+import { getEmbedVideoUrl } from '../lib/media';
 
 const VideoModal = ({ isOpen, onClose, project }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -14,41 +15,7 @@ const VideoModal = ({ isOpen, onClose, project }) => {
   const isGraphicDesign = project.category === 'Graphic Design';
   const hasPDF = project.pdfUrl;
 
-  // Function to get embeddable video URL
-  const getEmbedUrl = (url) => {
-    if (!url) return null;
-
-    // YouTube
-    if (url.includes('youtube.com') || url.includes('youtu.be')) {
-      const videoId = url.includes('youtu.be')
-        ? url.split('youtu.be/')[1]?.split('?')[0]
-        : url.split('v=')[1]?.split('&')[0];
-      return `https://www.youtube.com/embed/${videoId}?autoplay=1`;
-    }
-
-    // Vimeo
-    if (url.includes('vimeo.com')) {
-      const videoId = url.split('vimeo.com/')[1]?.split('?')[0];
-      return `https://player.vimeo.com/video/${videoId}?autoplay=1`;
-    }
-
-    // Google Drive
-    if (url.includes('drive.google.com')) {
-      const fileId = url.match(/[-\w]{25,}/);
-      if (fileId) {
-        return `https://drive.google.com/file/d/${fileId[0]}/preview`;
-      }
-    }
-
-    // Direct video URL (MP4, WEBM, etc.)
-    if (url.match(/\.(mp4|webm|ogg)$/i)) {
-      return url;
-    }
-
-    return url;
-  };
-
-  const embedUrl = getEmbedUrl(project.videoUrl);
+  const embedUrl = getEmbedVideoUrl(project.videoUrl);
   const isDirect = project.videoUrl?.match(/\.(mp4|webm|ogg)$/i);
 
   const handlePrevImage = () => {
