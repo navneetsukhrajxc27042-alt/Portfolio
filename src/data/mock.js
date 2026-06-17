@@ -80,16 +80,6 @@ export const portfolioProjects = [
     software: ["Premiere Pro", "After Effects", "Blender"]
   },
   {
-    id: 10,
-    title: "A Cinematic World Built in Unreal Engine",
-    category: "3D Cinematics",
-    thumbnail: "/thumbnails/3d-cinematic.png",
-    videoUrl: "https://drive.google.com/file/d/1xPCWAkZSCQdrlgEa-tKTauYks8vwhjEa/view?usp=drive_link",
-    description: "A cinematic 3D environment crafted in Unreal Engine and Blender, blending lighting, textures, and atmosphere to create a visually immersive experience.",
-    duration: "0:29",
-    software: ["Unreal Engine", "Blender"]
-  },
-  {
     id: 13,
     title: "Visual Storytelling Through Motion",
     category: "Motion Graphics",
@@ -194,8 +184,8 @@ export const aboutData = {
   tagline: "Video Editor & Motion Designer",
   bio: "With over 2 years of experience in video editing and motion graphics, I transform raw footage into compelling visual stories. My work spans across commercials, documentaries, and digital content, bringing creative visions to life through meticulous editing and innovative motion design.",
   experience: "2+ Years",
-  projectsCompleted: "30+",
-  happyClients: "10+",
+  projectsCompleted: "50+",
+  happyClients: "20+",
   image: "https://images.unsplash.com/photo-1603400938371-d030ad03505b"
 };
 
