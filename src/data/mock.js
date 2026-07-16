@@ -1,5 +1,35 @@
 export const portfolioProjects = [
   {
+    id: 15,
+    title: "The Reality of AI Channels - podcast edit",
+    category: "Shorts",
+    thumbnail: "/thumbnails/reality_of_ai_channel.png",
+    videoUrl: "https://drive.google.com/file/d/1e8BhSrFH99FEu9LPoVlXIsKJOyVaVm8b/view?usp=sharing",
+    description: "This edit explores the reality of running AI channels, explaining why most AI tools are overrated and why creators rely on affiliate marketing over ad revenue. Edited using Premiere Pro and After Effects.",
+    duration: "1:17",
+    software: ["Premiere Pro", "After Effects"]
+  },
+  {
+    id: 16,
+    title: "The Reality of Entrepreneurship & the Future of AI - podcast edit",
+    category: "Shorts",
+    thumbnail: "/thumbnails/Reality of Entrepreneurship & the Future of AI .png",
+    videoUrl: "https://drive.google.com/file/d/1Ofp5HlcTvJ-RcolGi2NlNWAWs3XW-0-D/view?usp=sharing",
+    description: "The video features a dynamic, split-screen interview format with clean transitions, engaging background music, and clear, synchronized subtitling. Edited using After Effects and Premiere Pro.",
+    duration: "1:25",
+    software: ["Premiere Pro", "After Effects"]
+  },
+  {
+    id: 17,
+    title: "Made $250k With Freelancing - Then This Happened - podcast edit",
+    category: "Shorts",
+    thumbnail: "/thumbnails/Made $250k With Freelancing - Then This Happened .png",
+    videoUrl: "https://drive.google.com/file/d/1BQ3u9jZVMflwIyHAEbS3rOosyE279xUH/view?usp=sharing",
+    description: "$250K freelancing + traveling 30+ countries ft. Shreya Mahendru, podcast intro edited using After Effects and Premiere Pro.",
+    duration: "1:18",
+    software: ["Premiere Pro", "After Effects"]
+  },
+  {
     id: 1,
     title: "STAN App Commercial",
     category: "Motion Graphics",
@@ -137,43 +167,43 @@ export const skills = [
 ];
 
 export const softwareTools = [
-  { 
-    name: "Adobe Premiere Pro", 
+  {
+    name: "Adobe Premiere Pro",
     icon: "Film",
     logo: "https://upload.wikimedia.org/wikipedia/commons/4/40/Adobe_Premiere_Pro_CC_icon.svg"
   },
-  { 
-    name: "After Effects", 
+  {
+    name: "After Effects",
     icon: "Sparkles",
     logo: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Adobe_After_Effects_CC_icon.svg"
   },
-  { 
-    name: "Photoshop", 
+  {
+    name: "Photoshop",
     icon: "Image",
     logo: "https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg"
   },
-  { 
-    name: "Illustrator", 
+  {
+    name: "Illustrator",
     icon: "PenTool",
     logo: "https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg"
   },
-  { 
-    name: "Blender", 
+  {
+    name: "Blender",
     icon: "Box",
     logo: "https://upload.wikimedia.org/wikipedia/commons/0/0c/Blender_logo_no_text.svg"
   },
-  { 
-    name: "Adobe Animate", 
+  {
+    name: "Adobe Animate",
     icon: "Sparkles",
     logo: "https://customer-assets.emergentagent.com/job_edit-showcase-pro-9/artifacts/k9bus8au_adobe-animate-logo.webp"
   },
-  { 
-    name: "Unreal Engine", 
+  {
+    name: "Unreal Engine",
     icon: "Box",
     logo: "https://upload.wikimedia.org/wikipedia/commons/d/da/Unreal_Engine_Logo.svg"
   },
-  { 
-    name: "Audition", 
+  {
+    name: "Audition",
     icon: "Headphones",
     logo: "https://upload.wikimedia.org/wikipedia/commons/0/0e/Adobe_Audition_CC_icon_%282020%29.svg"
   }
