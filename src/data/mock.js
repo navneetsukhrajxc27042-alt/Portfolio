@@ -110,16 +110,6 @@ export const portfolioProjects = [
     software: ["Premiere Pro", "After Effects", "Blender"]
   },
   {
-    id: 13,
-    title: "Visual Storytelling Through Motion",
-    category: "Motion Graphics",
-    thumbnail: "/thumbnails/gamezone-thumbnail.png",
-    videoUrl: "https://drive.google.com/file/d/12mKX0_0tKxEB5YeCrvJRXR-rxUB-SeYj/view?usp=sharing",
-    description: "Designed and animated using Adobe After Effects, highlighting strong motion graphics skills, smooth transitions, and attention to visual detail.",
-    duration: "0:15",
-    software: ["After Effects"]
-  },
-  {
     id: 14,
     title: "Insane Cinematic Shot Using Unreal Engine",
     category: "3D Cinematics",
