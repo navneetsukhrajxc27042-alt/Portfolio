@@ -19,7 +19,7 @@ const Contact = () => {
     {
       icon: <MapPin className="text-red-500" size={24} />,
       label: 'Location',
-      value: 'VPO Sofi Pind, Jalandhar, Punjab, India',
+      value: 'Jalandhar, Punjab, India',
       link: null
     }
   ];
