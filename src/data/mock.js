@@ -1,5 +1,14 @@
 export const portfolioProjects = [
   {
+    id: 18,
+    title: "PracticeDilly Motion Graphics",
+    category: "Shorts",
+    thumbnail: "https://drive.google.com/file/d/1qLoGUTDfl8mybwpDx3FKBohS7ChHIt0l/view?usp=sharing",
+    videoUrl: "https://drive.google.com/file/d/1LPFfhWU2Q8HK9zUyLijTxFD2Aq9mo-gf/view?usp=sharing",
+    description: "Short-form SaaS Motion graphics edit.",
+    software: ["Premiere Pro", "After Effects"]
+  },
+  {
     id: 15,
     title: "The Reality of AI Channels - podcast edit",
     category: "Shorts",
