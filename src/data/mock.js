@@ -1,11 +1,29 @@
 export const portfolioProjects = [
   {
-    id: 18,
-    title: "PracticeDilly Motion Graphics",
+    id: 21,
+    title: "STAN App Promotional Reel",
     category: "Shorts",
-    thumbnail: "/thumbnails/practice-dilly-motion-graphics.png",
-    videoUrl: "https://drive.google.com/file/d/1LPFfhWU2Q8HK9zUyLijTxFD2Aq9mo-gf/view?usp=sharing",
-    description: "Short-form SaaS Motion graphics edit.",
+    thumbnail: "/thumbnails/stan-app-promotional-reel.png",
+    videoUrl: "https://drive.google.com/file/d/1u5u3DG7yRsGmRf_r-4_VfLFq-C6gojd1/view?usp=sharing",
+    description: "Fast-paced promotional reel for the STAN app.",
+    software: ["Premiere Pro", "After Effects"]
+  },
+  {
+    id: 20,
+    title: "Burgers Promotional Reel",
+    category: "Shorts",
+    thumbnail: "/thumbnails/burgers-promotional-reel.png",
+    videoUrl: "https://drive.google.com/file/d/1YZuHOwIV-nS6PwrUwkNAD5Y_KVolw76U/view?usp=sharing",
+    description: "Short-form promotional reel with bold food-focused visuals.",
+    software: ["Premiere Pro", "After Effects"]
+  },
+  {
+    id: 19,
+    title: "ActivHippy Promotional Reel - Fast Pace",
+    category: "Shorts",
+    thumbnail: "/thumbnails/impostor-edit.png",
+    videoUrl: "https://drive.google.com/file/d/1yEbCmLf_sunKzfsr2ZHPbaTZVVwBCx5a/view?usp=sharing",
+    description: "Short-form edit featuring dynamic visual storytelling.",
     software: ["Premiere Pro", "After Effects"]
   },
   {
